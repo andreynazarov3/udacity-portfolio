@@ -1,0 +1,52 @@
+@import "vars";
+
+.featured {
+  padding:30px 0;
+  &-heading {
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    @media screen and (max-width: $mobileBreakpoint) {
+      font-size: 25px;
+    }
+  }
+  &-items-wrapper {
+    display: flex;
+    margin: -15px;
+    @media screen and (max-width: $mainBreakpoint) {
+      flex-wrap: wrap;
+    }
+    &-wrapper {
+      overflow: hidden;
+    }
+  }
+  &-item {
+    margin: 15px;
+    flex-shrink: 0;
+    @media screen and (max-width: $mainBreakpoint) {
+      width: calc(50% - 30px);
+      &:last-child {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: $mobileBreakpoint) {
+      width: calc(100% - 30px);
+    }
+    * {
+      max-width: 100%;
+    }
+
+  }
+  &-image-wrapper {
+    height: 215px;
+    @media screen and (max-width: $mainBreakpoint) {
+      height: auto;
+    }
+  }
+  img {
+    width: 280px;
+    @media screen and (max-width: $mainBreakpoint) {
+      width: 100%;
+    }
+  }
+}

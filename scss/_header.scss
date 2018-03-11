@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    width: 150px;
+    @media screen and (max-width: $mobileBreakpoint) {
+      width: 100px;
+    }
+  }
+  .name {
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    @media screen and (max-width: $mobileBreakpoint) {
+      font-size: 25px;
+    }
+  }
+}
