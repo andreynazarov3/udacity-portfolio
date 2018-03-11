@@ -1,5 +1,10 @@
 @import "vars";
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   max-width: $wrapperWidth;
   margin: 0 auto;
@@ -15,4 +20,3 @@ img {
   background: blue;
   margin-bottom: 10px;
 }
-
